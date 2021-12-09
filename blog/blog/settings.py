@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4574yu%&)4@b!!c%c1(x*d28qf2$ud-o*f)p#ai%*@a9qtm2p)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'glacial-island-54694.herokuapp.com', '0.0.0.0:5000', '0.0.0.0']
+ALLOWED_HOSTS = ['tranquil-brushlands-83289.herokuapp.com','localhost', '127.0.0.1', 'glacial-island-54694.herokuapp.com', '0.0.0.0:5000', '0.0.0.0']
 
 
 # Application definition
