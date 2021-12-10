@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-
+import django_heroku
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-4574yu%&)4@b!!c%c1(x*d28qf2$ud-o*f)p#ai%*@a9qtm2p)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tranquil-brushlands-83289.herokuapp.com','localhost', '127.0.0.1', 'glacial-island-54694.herokuapp.com', '0.0.0.0:5000', '0.0.0.0']
+ALLOWED_HOSTS = ['ngo-humildad.herokuapp.com','ngo-honestidad.herokuapp.com','tranquil-brushlands-83289.herokuapp.com','localhost', '127.0.0.1', 'glacial-island-54694.herokuapp.com', '0.0.0.0:5000', '0.0.0.0']
 
 
 # Application definition
@@ -156,3 +157,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Whitenoise config 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+django_heroku.settings(locals())
